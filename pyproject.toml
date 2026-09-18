@@ -7,11 +7,14 @@ authors = [
     { name = "t-dous-ece", email = "tao.dous@edu.ece.fr" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "faker>=40.39.0",
+]
 
 [project.scripts]
-ece-bigdata-fall = "ece_bigdata_fall:main"
+dataset-users = "ece_bigdata_fall.dataset_users:main"
+dataset-orders = "ece_bigdata_fall.dataset_orders:main"
 
 [build-system]
-requires = ["uv_build>=0.12.10,<0.13.0"]
+requires = ["uv_build>=0.12.5,<0.13.0"]
 build-backend = "uv_build"
